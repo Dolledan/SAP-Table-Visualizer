@@ -27,12 +27,18 @@ Trace extended relationships by increasing the depth to **2 Steps** from `FKKVKP
 Find all tables within 2 steps of `FKKVKP` that contain a specific field (e.g., **"name"**).
 ![Field Search](screenshots/s3.png)
 
-## Built With
+## 🛠️ Technologies & Tools
 
-- **JavaScript** (Vanilla ES6+)
-- **Cytoscape.js** (Graph Theory library)
-- **HTML5 & CSS3**
+### Frontend (Visualization)
+- **JavaScript (Vanilla ES6+)** – Core logic and interactive graph handling.
+- **Cytoscape.js** – High-performance Graph Theory library for relationship rendering.
+- **HTML5 & CSS3** – Responsive layout with Mobile-First optimizations.
 
+### Backend (Data Scraping)
+- **Python 3** – Automated data extraction pipeline.
+- **BeautifulSoup4** – HTML parsing for extracting SAP table structures and Foreign Key relations.
+- **Requests** – Robust HTTP handling for leanX data retrieval.
+- **JSON Serialization** – Efficient storage format to bridge the Python scraper and the JS frontend.
 ## Data Source
 
 The underlying table metadata is sourced from [leanX.eu](https://leanx.eu).
