@@ -2,7 +2,7 @@
 
 A lightweight interactive tool to visualize **SAP table relationships** and **Foreign Key dependencies** using a force-directed graph.
 
-You can try it live here: [SAP Table visualizer](https://dolledan.github.io/SAP-Table-visualizer/)
+You can try it live here: [SAP Table Visualizer](https://dolledan.github.io/SAP-Table-Visualizer/)
 
 ## Features
 
