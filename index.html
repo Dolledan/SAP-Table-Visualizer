@@ -14,6 +14,27 @@
         width: 100%;
         height: 90vh;
       }
+      #container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media (max-width: 768px) {
+        #container {
+          flex-direction: column; /* Stapelt Suche/Sidebar über oder unter den Graphen */
+        }
+
+        #cy {
+          height: 50vh; /* Der Graph bekommt nur die halbe Bildschirmhöhe */
+          width: 100%;
+        }
+
+        .sidebar {
+          width: 100%;
+          height: auto;
+          order: 2; /* Sidebar unter den Graphen schieben */
+        }
+      }
     </style>
   </head>
   <body>
@@ -69,8 +90,7 @@
             height: 80%;
             overflow: auto;
           "
-        >
-        </div>
+        ></div>
       </div>
     </div>
 
@@ -153,7 +173,7 @@
               width: 2,
               "target-arrow-color": "#ccc",
               "target-arrow-shape": "triangle",
-              "curve-style": "bezier",
+              "curve-style": "haystack",
             },
           },
           {
@@ -234,7 +254,6 @@
         datalist.appendChild(option);
       });
 
-
       // init Listeners
       const namesSet = new Set(names);
       namesSet.add("");
@@ -245,7 +264,7 @@
           applyFilter();
         }
       });
-      searchTable.dispatchEvent(new Event('change'));
+      searchTable.dispatchEvent(new Event("change"));
 
       searchTable.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
