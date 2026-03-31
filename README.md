@@ -27,7 +27,7 @@ Trace extended relationships by increasing the depth to **2 Steps** from `FKKVKP
 Find all tables within 2 steps of `FKKVKP` that contain a specific field (e.g., **"name"**).
 ![Field Search](screenshots/s3.png)
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
 ### Frontend (Visualization)
 - **JavaScript (Vanilla ES6+)** – Core logic and interactive graph handling.
